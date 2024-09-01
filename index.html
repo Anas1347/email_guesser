@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Guesser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Email Guesser</h1>
+        <form id="email-form">
+            <div class="input-group">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" placeholder="John Doe" required>
+                <small id="name-error" class="error"></small>
+            </div>
+            <div class="input-group">
+                <label for="domain">Domain:</label>
+                <input type="text" id="domain" placeholder="example.com" required>
+                <small id="domain-error" class="error"></small>
+            </div>
+            <button type="submit">Generate Emails</button>
+            <button type="button" id="reset-btn" disabled>Reset</button>
+        </form>
+        <div id="result">
+            <h2>Possible Emails:</h2>
+            <ul id="email-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
